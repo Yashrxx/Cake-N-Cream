@@ -2,51 +2,51 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Sweet Cake Theme - Light Pink Design System
+/* Elegant Purple Theme - Sophisticated Design System
 All colors MUST be HSL.
 */
 
 @layer base {
   :root {
-    --background: 330 50% 98%;
-    --foreground: 340 15% 15%;
+    --background: 270 30% 98%;
+    --foreground: 280 15% 15%;
 
-    --card: 320 40% 97%;
-    --card-foreground: 340 15% 15%;
+    --card: 275 35% 97%;
+    --card-foreground: 280 15% 15%;
 
-    --popover: 320 40% 97%;
-    --popover-foreground: 340 15% 15%;
+    --popover: 275 35% 97%;
+    --popover-foreground: 280 15% 15%;
 
-    --primary: 330 70% 65%;
+    --primary: 270 65% 60%;
     --primary-foreground: 0 0% 100%;
-    --primary-glow: 330 60% 75%;
+    --primary-glow: 275 55% 70%;
 
-    --secondary: 320 30% 90%;
-    --secondary-foreground: 340 15% 25%;
+    --secondary: 275 25% 88%;
+    --secondary-foreground: 280 15% 25%;
 
-    --muted: 320 25% 92%;
-    --muted-foreground: 340 10% 50%;
+    --muted: 275 20% 90%;
+    --muted-foreground: 280 10% 50%;
 
-    --accent: 315 60% 85%;
-    --accent-foreground: 340 15% 25%;
+    --accent: 265 50% 82%;
+    --accent-foreground: 280 15% 25%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 320 25% 88%;
-    --input: 320 25% 88%;
-    --ring: 330 70% 65%;
+    --border: 275 20% 85%;
+    --input: 275 20% 85%;
+    --ring: 270 65% 60%;
 
-    /* Cake theme specific colors */
-    --sweet-pink: 330 70% 65%;
-    --soft-cream: 45 40% 95%;
-    --warm-gold: 45 80% 70%;
-    --berry-accent: 350 70% 70%;
+    /* Purple theme specific colors */
+    --royal-purple: 270 65% 60%;
+    --soft-lavender: 280 40% 92%;
+    --deep-violet: 265 70% 45%;
+    --amethyst-accent: 275 60% 65%;
 
     /* Gradients */
     --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-glow)));
-    --gradient-hero: linear-gradient(135deg, hsl(330 60% 90%), hsl(320 50% 95%));
-    --gradient-card: linear-gradient(145deg, hsl(var(--card)), hsl(320 30% 95%));
+    --gradient-hero: linear-gradient(135deg, hsl(275 45% 88%), hsl(270 40% 93%));
+    --gradient-card: linear-gradient(145deg, hsl(var(--card)), hsl(275 25% 92%));
 
     /* Shadows */
     --shadow-soft: 0 4px 20px -8px hsl(var(--primary) / 0.2);

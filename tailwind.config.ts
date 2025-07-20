@@ -63,10 +63,10 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				'sweet-pink': 'hsl(var(--sweet-pink))',
-				'soft-cream': 'hsl(var(--soft-cream))',
-				'warm-gold': 'hsl(var(--warm-gold))',
-				'berry-accent': 'hsl(var(--berry-accent))'
+				'royal-purple': 'hsl(var(--royal-purple))',
+				'soft-lavender': 'hsl(var(--soft-lavender))',
+				'deep-violet': 'hsl(var(--deep-violet))',
+				'amethyst-accent': 'hsl(var(--amethyst-accent))'
 			},
 			backgroundImage: {
 				'gradient-primary': 'var(--gradient-primary)',
