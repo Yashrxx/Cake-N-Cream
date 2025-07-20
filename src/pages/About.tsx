@@ -1,7 +1,6 @@
 import { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { Navbar } from '@/components/Navbar';
 import { Footer } from '@/components/Footer';
 import { Award, Users, Heart, Clock } from 'lucide-react';
 import heroBakery from '@/assets/hero-bakery.jpg';
@@ -18,18 +17,18 @@ export const About = () => {
   useEffect(() => {
     const ctx = gsap.context(() => {
       // Hero animation
-      gsap.fromTo(heroRef.current, 
+      gsap.fromTo(heroRef.current,
         { opacity: 0, y: 50 },
         { opacity: 1, y: 0, duration: 1, ease: "power3.out" }
       );
 
       // Story section animation
-      gsap.fromTo(storyRef.current, 
+      gsap.fromTo(storyRef.current,
         { opacity: 0, y: 50 },
-        { 
-          opacity: 1, 
-          y: 0, 
-          duration: 1, 
+        {
+          opacity: 1,
+          y: 0,
+          duration: 1,
           ease: "power3.out",
           scrollTrigger: {
             trigger: storyRef.current,
@@ -39,12 +38,12 @@ export const About = () => {
       );
 
       // Stats animation
-      gsap.fromTo(statsRef.current?.children || [], 
+      gsap.fromTo(statsRef.current?.children || [],
         { opacity: 0, scale: 0.8 },
-        { 
-          opacity: 1, 
-          scale: 1, 
-          duration: 0.8, 
+        {
+          opacity: 1,
+          scale: 1,
+          duration: 0.8,
           ease: "back.out(1.7)",
           stagger: 0.2,
           scrollTrigger: {
@@ -55,12 +54,12 @@ export const About = () => {
       );
 
       // Values animation
-      gsap.fromTo(valuesRef.current?.children || [], 
+      gsap.fromTo(valuesRef.current?.children || [],
         { opacity: 0, y: 40 },
-        { 
-          opacity: 1, 
-          y: 0, 
-          duration: 0.8, 
+        {
+          opacity: 1,
+          y: 0,
+          duration: 0.8,
           ease: "power3.out",
           stagger: 0.15,
           scrollTrigger: {
@@ -88,7 +87,7 @@ export const About = () => {
       icon: Clock
     },
     {
-      title: "Premium Ingredients", 
+      title: "Premium Ingredients",
       description: "Only the finest flour, butter, and seasonal fruits make it into our cakes.",
       icon: Award
     },
@@ -106,27 +105,26 @@ export const About = () => {
 
   return (
     <div ref={sectionRef} className="min-h-screen bg-background">
-      <Navbar />
-      
+
       {/* Hero Section */}
       <section className="relative pt-24 pb-20 overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img
             src={heroBakery}
             alt="Our Sweet Bakery"
-            className="w-full h-full object-cover"
+            className="w-full h-full object-cover opacity-30"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-primary/80 to-primary/40" />
         </div>
-        
+
         <div className="container mx-auto px-4 relative z-10">
           <div ref={heroRef} className="max-w-3xl">
             <h1 className="text-5xl md:text-6xl font-bold text-white mb-6 leading-tight">
               Our Story of
-              <span className="text-primary-glow block">Sweetness & Joy</span>
+              <span className="text-white-500 block">Sweetness & Joy</span>
             </h1>
             <p className="text-xl text-white/90 leading-relaxed">
-              For nearly three decades, Sweet Cakes has been creating magical moments, 
+              For nearly three decades, Sweet Cakes has been creating magical moments,
               where traditional baking meets modern artistry and every cake tells a story of celebration.
             </p>
           </div>
@@ -142,19 +140,19 @@ export const About = () => {
             </h2>
             <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
               <p>
-                Sweet Cakes began in 1995 when Emma and James decided to bring 
-                their grandmother's authentic cake recipes to life. What started 
+                Sweet Cakes began in 1995 when Emma and James decided to bring
+                their grandmother's authentic cake recipes to life. What started
                 as a small neighborhood bakery has grown into a beloved destination for cake lovers.
               </p>
               <p>
-                Today, our second generation continues the legacy, blending traditional 
-                techniques with modern innovation. We still bake fresh every day to 
-                ensure our cakes are perfect, our decorations are stunning, and our customers 
+                Today, our second generation continues the legacy, blending traditional
+                techniques with modern innovation. We still bake fresh every day to
+                ensure our cakes are perfect, our decorations are stunning, and our customers
                 celebrate life's sweetest moments with something truly special.
               </p>
               <p>
-                Every layer, every decoration, every custom design is made with the same care and passion 
-                that Emma put into her very first wedding cake. It's not just about baking – it's about 
+                Every layer, every decoration, every custom design is made with the same care and passion
+                that Emma put into her very first wedding cake. It's not just about baking – it's about
                 creating memories, one celebration at a time.
               </p>
             </div>
@@ -168,8 +166,8 @@ export const About = () => {
           <div ref={statsRef} className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             {stats.map((stat, index) => (
               <div key={index} className="space-y-4">
-                <stat.icon className="h-12 w-12 text-primary-glow mx-auto" />
-                <div className="text-4xl font-bold text-primary-glow">{stat.number}</div>
+                <stat.icon className="h-12 w-12 text-white mx-auto" />
+                <div className="text-4xl font-bold text-white">{stat.number}</div>
                 <div className="text-primary-foreground/90 font-medium">{stat.label}</div>
               </div>
             ))}
@@ -188,7 +186,7 @@ export const About = () => {
               Our values guide everything we do, from sourcing ingredients to creating masterpieces.
             </p>
           </div>
-          
+
           <div ref={valuesRef} className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             {values.map((value, index) => (
               <div key={index} className="bg-card p-8 rounded-lg shadow-soft border border-border hover:shadow-card transition-shadow duration-300">

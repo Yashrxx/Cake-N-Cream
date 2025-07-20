@@ -7,6 +7,7 @@ import { getFeaturedProducts } from "@/data/products";
 import heroImage from "@/assets/hero-bakery.jpg";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import {Footer} from "../components/Footer"
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -162,6 +163,7 @@ export const Home = () => {
           </div>
         </div>
       </div>
+      <Footer/>
     </div>
   );
 };

@@ -1,6 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
 import { gsap } from 'gsap';
-import { Navbar } from '@/components/Navbar';
 import { Footer } from '@/components/Footer';
 import { MapPin, Phone, Mail, Clock, Send, Star } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -193,13 +192,13 @@ export const Contact = () => {
       icon: Phone,
       title: "Call Us",
       details: ["(555) 123-CAKE", "Mon-Fri: 7:00 AM - 8:00 PM", "Sat-Sun: 8:00 AM - 7:00 PM"],
-      color: "text-sweet-pink"
+      color: "text-primary"
     },
     {
       icon: Mail,
       title: "Email Us",
       details: ["hello@sweetcakes.com", "orders@sweetcakes.com", "custom@sweetcakes.com"],
-      color: "text-berry-accent"
+      color: "text-primary"
     },
     {
       icon: Clock,
@@ -211,7 +210,6 @@ export const Contact = () => {
 
   return (
     <div ref={sectionRef} className="min-h-screen bg-background">
-      <Navbar />
       
       {/* Hero Section */}
       <section className="pt-24 pb-16 bg-gradient-hero">
@@ -378,14 +376,14 @@ export const Contact = () => {
                     </div>
                   </div>
                   <div className="flex items-start space-x-3">
-                    <Phone className="h-5 w-5 text-sweet-pink mt-0.5 flex-shrink-0" />
+                    <Phone className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
                     <div>
                       <h4 className="font-medium text-foreground">Custom Orders</h4>
                       <p className="text-sm text-muted-foreground">Call 72 hours ahead for custom cakes and wedding orders</p>
                     </div>
                   </div>
                   <div className="flex items-start space-x-3">
-                    <Mail className="h-5 w-5 text-berry-accent mt-0.5 flex-shrink-0" />
+                    <Mail className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
                     <div>
                       <h4 className="font-medium text-foreground">Special Events</h4>
                       <p className="text-sm text-muted-foreground">Email us for birthdays, weddings, and corporate celebrations</p>
