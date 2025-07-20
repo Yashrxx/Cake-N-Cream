@@ -32,7 +32,7 @@ export const Navbar = () => {
           <Link to="/" className="flex items-center space-x-2">
             <Heart className="h-8 w-8 text-primary fill-primary animate-bounce-gentle" />
             <span className="text-2xl font-bold bg-gradient-primary bg-clip-text text-transparent">
-              Sweet Cakes
+              Cake N Cream
             </span>
           </Link>
 

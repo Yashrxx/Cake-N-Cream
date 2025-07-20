@@ -11,7 +11,7 @@ export const Footer = () => {
             <div className="flex items-center space-x-2">
               <Heart className="h-6 w-6 text-pink-400 fill-pink-400" />
               <span className="text-xl font-bold bg-gradient-to-r from-pink-400 to-purple-300 bg-clip-text text-transparent">
-                Sweet Cakes
+                Cake N Cream
               </span>
             </div>
             <p className="text-purple-200 text-sm">
